@@ -86,14 +86,12 @@ btnBorar.addEventListener('click', ()=>{
 
 
 ulFilters.addEventListener('click',(event)=>{
-    console.log(event.target.text);
 
     const filtro = event.target.text;
 
     if( !filtro ) return;
 
     anchorFiltros.forEach(elem => elem.classList.remove('selected'));
-    console.log(event.target);
     event.target.classList.add('selected');
 
     for (const elemento of divTodoList.children) {
