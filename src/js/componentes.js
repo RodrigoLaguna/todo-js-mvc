@@ -75,7 +75,6 @@ btnBorar.addEventListener('click', ()=>{
 
     for (let i =  divTodoList.children.length -1; i >= 0; i--) {
         const elemento = divTodoList.children[i];
-        console.log(elemento);
 
         if (elemento.classList.contains('completed')) {
             divTodoList.removeChild(elemento);
